@@ -1,0 +1,206 @@
+html,
+body {
+
+    display: flex;
+    height: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    align-content: stretch;
+    background-image: linear-gradient(to bottom, rgb(4, 7, 35), rgb(7, 80, 159));
+    background-size: cover;
+    background-repeat: repeat;
+    font-family: Arial, sans-serif;
+}
+
+
+div{
+  width: 100%;
+}
+
+.profile{
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    border-radius: 8%;
+    
+}
+
+.txt{
+    display: inline;
+    text-align: center;
+    justify-content: center;
+}
+
+h1{
+   
+    text-align: center;
+}
+
+.navbar {
+    top: 0;
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    transition: 0.2s ease-in-out;
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    
+  }
+
+ button.remove:hover, input[type="submit"].remove:hover{
+    background-color: red;
+  }
+
+  button, input[type = "submit"]{
+    
+    background-color: rgb(4, 7, 35);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 1rem;
+    cursor: pointer;
+    top: 100px;
+  }
+
+
+  .nohover:hover{
+     pointer-events: none !important; 
+  }
+
+  button:hover, input[type = "submit"]:hover{
+    background-color: #3e8e41;
+  }
+
+
+  .add {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  td{
+    padding: 10px;
+    text-align: center;
+    
+}
+
+tr{
+    background-color: white;
+
+}
+
+table{
+ 
+  width: 100%;
+  border: solid ;
+}
+
+
+
+.del,.return, input[type='submit'].del{
+  background-color: rgb(4, 7, 35);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  top: 100px;
+}
+
+.return:hover{
+  background-color: green;
+}
+
+.del:hover,input[type='submit'].del:hover{
+  background-color: red;
+}
+
+.empty:hover{
+  background-color: red;
+}
+
+.buttons{
+  display: flex;
+}
+
+.bookcontainer {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.book {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 330px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+
+.book img {
+  width: 100%;
+  height: auto;
+}
+.book h2 {
+  font-size: 18px;
+  color: #333;
+}
+.book .author, .book .availability {
+  font-size: 16px;
+  color: #666;
+}
+.book .description {
+  font-size: 14px;
+  color: #444;
+  margin-top: 10px;
+}
+.book button {
+  display: block; 
+  width: auto;
+  padding: 10px 20px;
+  margin: 10px auto; 
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.book button:hover {
+  background-color: #004494;
+}

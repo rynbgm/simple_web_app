@@ -1,0 +1,41 @@
+html,
+body {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    background-image: linear-gradient(to bottom, rgb(4, 7, 35), rgb(7, 80, 159));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+}
+
+input,select{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.yearinput::-webkit-inner-spin-button, 
+.yearinput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
